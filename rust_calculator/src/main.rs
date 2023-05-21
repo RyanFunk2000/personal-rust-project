@@ -53,7 +53,7 @@ fn main() {
         println!("Restart and make another calculation? y/n: ");
         let mut choice: String = String::new();
 		io::stdin().read_line(&mut choice).expect("failed to readline");
-        if choice != "y" {
+        if choice != String::from("y") {
             break;
         }
     }
